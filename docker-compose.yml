@@ -5,6 +5,6 @@ services:
       - 80:80
     image: webserver:latest
     volumes:
-            - ./index.html:/usr/share/nginx/html/index.html
+            - /var/lib/jenkins/workspace/final_project:/usr/share/nginx/html/
             - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
             - ./log/nginx/jenkins:/var/log/nginx/jenkins/
